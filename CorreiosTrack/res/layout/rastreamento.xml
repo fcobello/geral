@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#BEBEBE">
+    <TableLayout
+    	android:orientation="horizontal"
+      	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+      	android:stretchColumns="0">
+		<TableRow>
+			<EditText
+			android:id="@+id/txtCodigo" 
+			android:hint="Código" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1">
+			</EditText>
+		</TableRow>
+		<TableRow>
+				<EditText 
+				android:hint="Descrição"
+				android:id="@+id/txtTag" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+				</EditText>
+				<Button 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/btnRastrear" 
+				android:layout_gravity="center" 
+				android:text="Rastrear">
+				</Button>
+		</TableRow>
+	</TableLayout>
+	<ListView 
+		android:id="@+id/lstRegistros" 
+		android:layout_width="fill_parent"
+		android:layout_weight="1"
+		android:layout_height="fill_parent">
+	</ListView>
+
+</LinearLayout>
